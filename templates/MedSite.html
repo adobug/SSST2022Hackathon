@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>MedSite</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://img.a.transfermarkt.technology/portrait/big/320271-1496906352.jpg?lm=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+ <link rel="stylesheet" href="style.css" Type="text/css" media="all">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+
+</style>
+<body>
+
+
+   
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-white" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="{{ url_for('login') }}" class="w3-bar-item w3-button w3-padding-large w3-white">Log in</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white"></a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-hover- w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin1 w3-jumbo">WELCOME !</h1>
+  <p class="w3-xlarge">We care about your health.</p>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-containera">
+  <img src="ssss.jpg" class="floatRight">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>What exactly is MedSite?</h1>
+      <h5 class="w3-padding-32">MedSite is an application that allows users to search and diagnose all visible or visual dermatological types of diseases or any changes on the body. It is very easy to use, so with just one photo taken ,the application reads which type of dermatological disease or other change is( details with a photo) and the user is automatically provided with an alternative: advice or instructions on self-treatment (if the case is harmless) or instructions for asking a doctor or specialist (if the case is not harmless). All that is needed is for the user to take a picture of a certain part of the body where the growth to some other change is located, and then he will get all the necessary information about it. </h5>
+
+      <p class="w3-text">MedSite was created for the purpose of more efficient, faster and more accessible diagnosis of dermatological diseases in order for users to avoid the often complicated process of going to the doctor, and to get all the information they are interested in on a very simple way.
+        The images used by MedSite are collected from real life, which doctors personally photographed on their patients and archived in our database.
+        It is very important to emphasize that all data on various diseases and visible changes stored in MedSite are based on books of the medical faculty, not from the Internet. Therefore, this application is completely accurate and reliable.</p>
+    </div>
+    <div class="w3-third w3-center">
+      <i class="fa fa-anchor w3-padding-64 w3-text-white"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding1 w3-white w3-padding-64 w3-container">
+  <img src="aa.png" class="floatLeft">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-64 w3-text-white w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>DISCLAIMER: </h1>
+      <h5 class="w3-padding-32">All photos used are approved and protected for the purpose of using this application and will not be published or used anywhere else.</h5>
+
+      <p class="w3-text"></p>
+    </div>
+  </div>
+</div>
+
+<div class="w3-container2 w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin">Keeping your body healthy is an expression of gratitude to the whole cosmos- the trees, the clouds, everything</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+ <p> <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"></a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>

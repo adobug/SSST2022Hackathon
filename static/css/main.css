@@ -1,0 +1,45 @@
+.w3-container {
+    background-color: #add8e6;
+    color: whitesmoke;
+}
+.w3-text
+{
+    background-color: blue;
+}
+.w3-twothird
+{
+    background-color:white;
+    color: #95B9C7;
+}
+.w3-text
+{
+    background-color:white;
+    color: #95B9C7;
+}
+.w3-margin
+{   
+    
+    color: aliceblue;
+}
+.w3-container2
+{
+    background-color: #add8e6;
+}
+.floatRight
+{
+    float:right;
+    clear:right;
+    margin-left:20px;
+    border-radius: 50%;
+}
+.w3-row-padding1
+{
+background-color: #add8e6;    
+}
+.floatLeft
+{
+    float:left;
+    clear:left;
+    margin-left:10px;
+    border-radius: 50%;
+}
